@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+@use "../components/icons" as *;
+
+.links-section {
+  @include container;
+
+  margin: $medium 0 $xlarge 0;
+
+  &__links {
+    padding: 0 $medium;
+    display: none;
+    justify-content: space-evenly;
+
+    .link {
+      @include icon;
+    }
+
+    @media (max-width: $bp-medium) {
+      display: flex;
+    }
+
+    @media (max-width: $bp-small) {
+      padding: 0 $small;
+    }
+  }
+
+  @media (max-width: $bp-small) {
+    margin-bottom: $large;
+  }
+}

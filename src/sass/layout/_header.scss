@@ -1,0 +1,63 @@
+@use "../abstracts" as *;
+@use "../components/icons" as *;
+
+.header {
+  padding-bottom: 2.5rem;
+
+  &__background {
+    height: 10rem;
+    width: 100%;
+    background: linear-gradient($primary-shade, $primary);
+    position: absolute;
+    z-index: -1;
+  }
+
+  .box {
+    @include container;
+
+    height: 15rem;
+    transform: translateY(16.67%);
+  }
+
+  &__main {
+    padding: 0 $medium;
+
+    background-color: $white;
+    box-shadow: 0 0 $small $shadow;
+    height: 15rem;
+    border-radius: $border-radius;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: $small;
+
+      &__photo {
+        height: 7.5rem;
+        width: 7.5rem;
+        border-radius: $border-radius;
+      }
+    }
+
+    @media (max-width: $bp-small) {
+      padding: 0 $small;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: $small;
+
+    .link {
+      @include icon;
+    }
+
+    @media (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+}

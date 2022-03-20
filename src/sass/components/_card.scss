@@ -1,0 +1,12 @@
+@use "../abstracts/util" as *;
+@use "../abstracts/colors" as *;
+
+@mixin card {
+  width: 25rem;
+  height: 40rem;
+  border-radius: $border-radius;
+  box-shadow: 0 0.8rem 1.6rem $shadow;
+  overflow: hidden;
+
+  flex-shrink: 0;
+}

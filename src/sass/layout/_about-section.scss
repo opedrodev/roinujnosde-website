@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.about-section {
+  @include container;
+
+  margin: $xlarge 0 $xlarge 0;
+
+  h2 {
+    margin: 0 0 $small $medium;
+  }
+
+  p {
+    margin: 0 $medium;
+  }
+
+  @media (max-width: $bp-medium) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $bp-small) {
+    margin-bottom: $medium;
+
+    p,
+    h2 {
+      margin: 0 $small $small $small;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

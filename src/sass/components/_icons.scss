@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+@mixin icon {
+  display: grid;
+  place-content: center;
+
+  height: 4.8rem;
+  width: 4.8rem;
+  background: linear-gradient($primary-shade, $primary);
+  border-radius: $border-radius;
+
+  transition: all 0.3s;
+
+  img {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  &:hover {
+    background: linear-gradient($primary-shade, darken($primary, 10%));
+  }
+}

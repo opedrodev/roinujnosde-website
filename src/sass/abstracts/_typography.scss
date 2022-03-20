@@ -1,0 +1,61 @@
+@use "colors" as *;
+@use "util" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+
+  @media (max-width: $bp-xsmall) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: $text-color;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: $black;
+}
+
+h2 {
+  color: $black;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  color: $black;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+a {
+  font-size: 1.6rem;
+
+  &:link,
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover,
+  &:active {
+    color: $link-color-shade;
+  }
+}
