@@ -1,27 +1,11 @@
-@use "../abstracts" as *;
+@use "../abstracts/colors";
 
 .footer {
-  @include container;
+  border-top: 1px solid colors.$lightgray;
 
-  h2 {
-    margin: 0 0 $small $medium;
-  }
-
-  &__link-list {
-    margin-left: $large;
-
-    .list-item {
-      margin-bottom: $small;
-    }
-  }
-
-  @media (max-width: $bp-small) {
-    h2 {
-      margin: 0 0 $small $small;
-    }
-
-    &__link-list {
-      margin-left: $medium;
-    }
+  .copyright {
+    font-size: 1.4rem;
+    padding: 1.6rem 0;
+    text-align: center;
   }
 }

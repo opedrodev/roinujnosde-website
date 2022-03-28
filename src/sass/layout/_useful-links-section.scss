@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+.useful-links-section {
+  @include container;
+  margin-bottom: $xlarge;
+
+  h2 {
+    margin: 0 0 $small $medium;
+  }
+
+  &__link-list {
+    margin-left: $large;
+
+    display: flex;
+    gap: 4.8rem;
+
+    .list-item {
+      margin-bottom: $small;
+    }
+  }
+
+  @media (max-width: $bp-small) {
+    margin-bottom: $medium;
+
+    h2 {
+      margin: 0 0 $small $small;
+    }
+
+    &__link-list {
+      margin-left: $medium;
+    }
+  }
+}

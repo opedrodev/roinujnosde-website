@@ -9,6 +9,32 @@
     <title>RoinujNosde</title>
   </head>
   <body>
+    <!-- TEMPLATES -->
+    <template id="button-template">
+      <p class="title">More info &rarr;</p>
+    </template>
+
+    <template id="icons-template">
+      <a href="https://discord.roinujnosde.me/" target="_blank" class="link">
+        <img src="assets/discord-icon.png" alt="discord icon" />
+      </a>
+
+      <a href="https://github.com/roinujnosde" target="_blank" class="link">
+        <img src="assets/github-icon.png" alt="github icon" />
+      </a>
+
+      <a href="mailto:edsonpassosjr@outlook.com" target="_blank" class="link">
+        <img src="assets/email-icon.png" alt="email icon" />
+      </a>
+
+      <a href="https://ko-fi.com/RoinujNosde" target="_blank" class="link">
+        <img src="assets/coffee-cup-icon.png" alt="coffee cup icon" />
+      </a>
+    </template>
+    <!-- TEMPLATES -->
+
+    <!-- --- -->
+
     <!-- HEADER -->
     <header class="header">
       <div class="header__background"></div>
@@ -24,36 +50,7 @@
             </div>
           </div>
 
-          <div class="header__links">
-            <a
-              href="https://discord.roinujnosde.me/"
-              target="_blank"
-              class="link"
-            >
-              <img src="assets/discord-icon.png" alt="discord icon" />
-            </a>
-            <a
-              href="https://github.com/roinujnosde"
-              target="_blank"
-              class="link"
-            >
-              <img src="assets/github-icon.png" alt="github icon" />
-            </a>
-            <a
-              href="mailto:edsonpassosjr@outlook.com"
-              target="_blank"
-              class="link"
-            >
-              <img src="assets/email-icon.png" alt="email icon" />
-            </a>
-            <a
-              href="https://ko-fi.com/RoinujNosde"
-              target="_blank"
-              class="link"
-            >
-              <img src="assets/coffee-cup-icon.png" alt="coffee cup icon" />
-            </a>
-          </div>
+          <div class="header__links"></div>
         </div>
       </div>
     </header>
@@ -63,20 +60,7 @@
 
     <!-- LINKS SECTION -->
     <section class="links-section">
-      <div class="links-section__links">
-        <a href="#" class="link">
-          <img src="assets/discord-icon.png" alt="" />
-        </a>
-        <a href="#" class="link">
-          <img src="assets/github-icon.png" alt="" />
-        </a>
-        <a href="#" class="link">
-          <img src="assets/email-icon.png" alt="" />
-        </a>
-        <a href="#" class="link">
-          <img src="assets/coffee-cup-icon.png" alt="" />
-        </a>
-      </div>
+      <div class="links-section__links"></div>
     </section>
     <!-- LINKS SECTION -->
 
@@ -101,10 +85,6 @@
       <h2>Projects</h2>
 
       <div class="projects-section__slider">
-        <template id="button-template">
-          <p class="title">More info &rarr;</p>
-        </template>
-
         <!-- SIMPLECLANS -->
         <div class="card">
           <div class="card__image">
@@ -306,34 +286,46 @@
 
     <!-- --- -->
 
-    <footer class="footer">
+    <!-- USEFUL LINKS SECTION -->
+    <section class="useful-links-section">
       <h2>Useful Links</h2>
 
-      <ul class="footer__link-list">
+      <ul class="useful-links-section__link-list">
         <li class="list-item">
-          <a class="link" target="_blank" href="#">Jenkins</a>
+          <a class="link" target="_blank" href="https://ci.roinujnosde.me/"
+            >Jenkins</a
+          >
         </li>
         <li class="list-item">
-          <a class="link" target="_blank" href="#">Wiki</a>
+          <a
+            class="link"
+            target="_blank"
+            href="https://wiki.roinujnosde.me/simpleclans/"
+            >Wiki</a
+          >
         </li>
         <li class="list-item">
-          <a class="link" target="_blank" href="#">Repository</a>
+          <a class="link" target="_blank" href="https://repo.roinujnosde.me/#/"
+            >Repository</a
+          >
         </li>
       </ul>
+    </section>
+    <!-- USEFUL LINKS SECTION -->
+
+    <!-- --- -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="copyright">&copy; 2022, opedrodev. All rights reserved.</p>
     </footer>
+    <!-- FOOTER -->
+
+    <!-- --- -->
 
     <!-- SCRIPTS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-
     <script src="scripts/horizontalScroll.js"></script>
-    <script src="scripts/cardButtonTitle.js"></script>
+    <script src="scripts/templateSetter.js"></script>
     <!-- SCRIPTS -->
   </body>
 </html>
