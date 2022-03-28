@@ -7,5 +7,17 @@
     font-size: 1.4rem;
     padding: 1.6rem 0;
     text-align: center;
+
+    a:link,
+    a:visited {
+      font-size: 1.4rem;
+      color: colors.$text-color;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
   }
 }
