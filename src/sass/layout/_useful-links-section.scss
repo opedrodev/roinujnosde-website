@@ -13,10 +13,6 @@
 
     display: flex;
     gap: 4.8rem;
-
-    .list-item {
-      margin-bottom: $small;
-    }
   }
 
   @media (max-width: $bp-small) {
